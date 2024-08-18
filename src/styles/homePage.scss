@@ -1,0 +1,63 @@
+//variable sur Home Page
+$bg-image: url('../images//homeBG.png');
+.cadre {
+    margin: 50px;
+    height: 223px;
+    background-image: $bg-image; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: contrast(1);
+   &_txt {
+    color: white;
+    text-align: center;
+    //background: rgba(0, 0, 0, 0.1); /* Pour un meilleur contraste avec l'image de fond */
+    padding: 20px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 50px;
+    article , img{
+        max-width: 340px;
+        height: 340px;
+        padding: 20px;
+        border-radius: 60px;
+        
+    }
+    article {
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        h2 {
+            position: absolute;
+            bottom: 5%;
+            left: 15%;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .galerry {
+        width: 335px;
+        article {
+            max-width: 335px;
+        }
+    }
+  }
