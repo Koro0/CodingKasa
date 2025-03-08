@@ -1,9 +1,15 @@
 //variable sur Home Page
 $bg-image: url('../images//homeBG.png');
+
 .cadre {
     margin: 50px;
     height: 223px;
+    &_home {
     background-image: $bg-image; 
+    }
+    &_apropos {
+        background-image: $bg-image;
+    }
     background-size: cover;
     background-position: center;
     border-radius: 20px;

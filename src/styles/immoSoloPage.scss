@@ -20,7 +20,6 @@ $primaryColor: #FF6060;
         border-radius: 15px;
         color: white;
         min-width: 84px;
-        width: 98px;
         height: 18px;
         text-align: center;
         margin-right: 5px;
@@ -35,9 +34,24 @@ $primaryColor: #FF6060;
             padding-left: 0;
         }
     }
-    :active {
-        background: rgba(0, 0, 0, 0.1);
+    /*:active {
         border-radius: 5px;
+    }*/
+    &_inactiveElt {
+        display: none;
+    }
+    &_activeElt{
+        background: rgba(0, 0, 0, 0.1);
+        margin: 0;
+        border-radius: 5px;
+        padding-top: 10px;
+    }
+    p, ul {
+        line-height: 150%;
+    }
+    button {
+        border: none;
+        background: none;
     }
 }
 //Slide Images
@@ -104,13 +118,21 @@ $primaryColor: #FF6060;
     .slidRate{
         text-align: right;
         display: flex;
-        flex-direction: row;
-        .hostPicture {
-            width: 93px;
-            border-radius: 50%;
-        }
-        h2 {
-            font-size: 18px;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .host {
+            display: flex;
+            align-items: center;
+            .hostPicture {
+                width: 93px;
+                border-radius: 50%;
+            }
+            h2 {
+                font-size: 18px;
+                margin-right: 5px;
+                
+            }
         }
     }
     .hostName {
@@ -125,6 +147,6 @@ $primaryColor: #FF6060;
     font-size: 18px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    padding: 10px;
 }
