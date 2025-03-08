@@ -48,9 +48,7 @@ export default function ShowImmo({ data }: ShowImmoProps) {
             <div className="dropdown">
               <h2>Description</h2>
               <button
-                onClick={() =>
-                  console.log(setDescriptionDropBool(!descriptionDropBool))
-                }
+                onClick={() => setDescriptionDropBool(!descriptionDropBool)}
               >
                 <img
                   src={descriptionDropBool ? arrowUp : arrowDown}
@@ -71,11 +69,7 @@ export default function ShowImmo({ data }: ShowImmoProps) {
           <div className="immoSoloPage_info_equipements">
             <div className="dropdown">
               <h2>Équipements</h2>
-              <button
-                onClick={() =>
-                  console.log(setEquimentDropBool(!equimentDropBool))
-                }
-              >
+              <button onClick={() => setEquimentDropBool(!equimentDropBool)}>
                 <img src={equimentDropBool ? arrowUp : arrowDown} alt="drop" />
               </button>
             </div>
